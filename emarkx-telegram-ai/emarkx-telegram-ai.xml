@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension version="3.9" type="plugin" group="system" method="upgrade">
+    <name>Emarkx AI Integration with Telegram</name>
+    <description>Below is the settings that you will need to fill out to make the extension work.</description>
+    <version>1.0.7</version>
+    <creationDate>10 June 2023</creationDate>
+    <author>Emarkx (Ephrain Marchan)</author>
+    <authorEmail>info.emarkdev@gmail.com</authorEmail>
+    <authorUrl>https://www.emarkdev.com</authorUrl>
+    <license>GPL-2.0+</license>
+    <files>
+        <filename plugin="emarkx-telegram-ai">emarkx-telegram-ai.php</filename>
+        <filename plugin="emarkx-telegram-ai">session_data.txt</filename>
+        <filename plugin="emarkx-telegram-ai">session_values.txt</filename>
+        <folder>vendor</folder>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="emarkx_telegram_ai_chat_ids" type="text" label="Telegram Chat IDs (,)" description="Enter your Telegram Chat IDs" default="" />
+                <field name="emarkx_telegram_ai_bot_api_key" type="text" label="Telegram API key" description="Enter your Telegram API key" default="" />
+                <field name="emarkx_telegram_ai_gpt_api_key" type="text" label="GPT API key" description="Enter your GPT API key" default="" />
+            </fieldset>
+        </fields>
+    </config>
+    <menus>
+        <menu>Emarkx Telegram AI</menu>
+    </menus>
+    <updateservers>
+        <server type="extension" priority="1" name="Emarkx AI Integration with Telegram Updates">https://emarkdev.com/joomla/emarkx-telegram-ai/update.xml
+        </server>
+    </updateservers>
+</extension>
