@@ -1,3 +1,6 @@
+Download from Joomla Extensions Directory:
+https://extensions.joomla.org/extension/core-enhancements/coding-a-scripts-integration/emarkx-ai-integration-with-telegram/
+
 /**
 * Emarkx AI Integration for Joomla! - v1.0.7
 *
